@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0BC68D6-4EFB-323D-BC64-E73F73E55B4D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\librarise\freeglut-3.4.0\src;C:\librarise\freeglut-3.4.0\include;C:\librarise\freeglut-3.4.0\buld;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\librarise\freeglut-3.4.0\src;C:\librarise\freeglut-3.4.0\include;C:\librarise\freeglut-3.4.0\buld;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\librarise\freeglut-3.4.0\src;C:\librarise\freeglut-3.4.0\include;C:\librarise\freeglut-3.4.0\buld;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\librarise\freeglut-3.4.0\src;C:\librarise\freeglut-3.4.0\include;C:\librarise\freeglut-3.4.0\buld;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\librarise\freeglut-3.4.0\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/librarise/freeglut-3.4.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/librarise/freeglut-3.4.0 -BC:/librarise/freeglut-3.4.0/buld --check-stamp-file C:/librarise/freeglut-3.4.0/buld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake;C:\librarise\freeglut-3.4.0\FreeGLUTConfig.cmake.in;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeCCompiler.cmake;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeRCCompiler.cmake;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeSystem.cmake;C:\librarise\freeglut-3.4.0\config.h.in;C:\librarise\freeglut-3.4.0\freeglut.pc.in;C:\librarise\freeglut-3.4.0\freeglut.rc.in;C:\librarise\freeglut-3.4.0\src\fg_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\librarise\freeglut-3.4.0\buld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/librarise/freeglut-3.4.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/librarise/freeglut-3.4.0 -BC:/librarise/freeglut-3.4.0/buld --check-stamp-file C:/librarise/freeglut-3.4.0/buld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake;C:\librarise\freeglut-3.4.0\FreeGLUTConfig.cmake.in;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeCCompiler.cmake;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeRCCompiler.cmake;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeSystem.cmake;C:\librarise\freeglut-3.4.0\config.h.in;C:\librarise\freeglut-3.4.0\freeglut.pc.in;C:\librarise\freeglut-3.4.0\freeglut.rc.in;C:\librarise\freeglut-3.4.0\src\fg_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\librarise\freeglut-3.4.0\buld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/librarise/freeglut-3.4.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/librarise/freeglut-3.4.0 -BC:/librarise/freeglut-3.4.0/buld --check-stamp-file C:/librarise/freeglut-3.4.0/buld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake;C:\librarise\freeglut-3.4.0\FreeGLUTConfig.cmake.in;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeCCompiler.cmake;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeRCCompiler.cmake;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeSystem.cmake;C:\librarise\freeglut-3.4.0\config.h.in;C:\librarise\freeglut-3.4.0\freeglut.pc.in;C:\librarise\freeglut-3.4.0\freeglut.rc.in;C:\librarise\freeglut-3.4.0\src\fg_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\librarise\freeglut-3.4.0\buld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/librarise/freeglut-3.4.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/librarise/freeglut-3.4.0 -BC:/librarise/freeglut-3.4.0/buld --check-stamp-file C:/librarise/freeglut-3.4.0/buld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.26\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.26\Modules\WriteBasicConfigVersionFile.cmake;C:\librarise\freeglut-3.4.0\FreeGLUTConfig.cmake.in;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeCCompiler.cmake;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeRCCompiler.cmake;C:\librarise\freeglut-3.4.0\buld\CMakeFiles\3.26.0-rc4\CMakeSystem.cmake;C:\librarise\freeglut-3.4.0\config.h.in;C:\librarise\freeglut-3.4.0\freeglut.pc.in;C:\librarise\freeglut-3.4.0\freeglut.rc.in;C:\librarise\freeglut-3.4.0\src\fg_version.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\librarise\freeglut-3.4.0\buld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\ZERO_CHECK.vcxproj">
+      <Project>{7D53976F-5EE1-3118-88B6-7C231637ED06}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\3dview.vcxproj">
+      <Project>{94660860-2198-3EC6-AAD4-A47EDD3ACF7B}</Project>
+      <Name>3dview</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\3dview_static.vcxproj">
+      <Project>{10EAF4F4-7CFF-33FD-9282-3CB9E10342F1}</Project>
+      <Name>3dview_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\CallbackMaker.vcxproj">
+      <Project>{949653D6-EC92-3E39-8CE6-CF7630474D6C}</Project>
+      <Name>CallbackMaker</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\CallbackMaker_static.vcxproj">
+      <Project>{F1FF3EBA-C6C6-3364-B10F-40C660705981}</Project>
+      <Name>CallbackMaker_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\Fractals.vcxproj">
+      <Project>{53AA220B-B403-380A-9874-D8345520F7FE}</Project>
+      <Name>Fractals</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\Fractals_random.vcxproj">
+      <Project>{A967F9A2-4138-3B2A-ADD1-FB668417C7A7}</Project>
+      <Name>Fractals_random</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\Fractals_random_static.vcxproj">
+      <Project>{77D10DFF-C780-3048-B8FA-0E8F0E3D6D01}</Project>
+      <Name>Fractals_random_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\Fractals_static.vcxproj">
+      <Project>{878B3FC2-0B9E-319C-8FAD-1ECEA0FE43E2}</Project>
+      <Name>Fractals_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\Lorenz.vcxproj">
+      <Project>{D5AA0370-2167-30C9-9230-8BFF778AEE6E}</Project>
+      <Name>Lorenz</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\Lorenz_static.vcxproj">
+      <Project>{E4C4CB19-2F44-3AC3-98A5-476D18BC3CBB}</Project>
+      <Name>Lorenz_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\One.vcxproj">
+      <Project>{318FEAB3-8862-3C35-B5A8-5987039FB06A}</Project>
+      <Name>One</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\One_static.vcxproj">
+      <Project>{882D68B7-B738-34BF-8880-A3DBD125567C}</Project>
+      <Name>One_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\freeglut.vcxproj">
+      <Project>{6DDB169B-C14B-3A7F-A07A-E48C6C7D46D3}</Project>
+      <Name>freeglut</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\freeglut_static.vcxproj">
+      <Project>{AD7343FF-06B0-3BC6-B261-1D80BC9620A9}</Project>
+      <Name>freeglut_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\indexed_color.vcxproj">
+      <Project>{27CC42C8-8ADC-3C6D-930C-46C83932BA4E}</Project>
+      <Name>indexed_color</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\indexed_color_static.vcxproj">
+      <Project>{791FE9D0-EDC6-3E96-9E1E-EA842DA4F168}</Project>
+      <Name>indexed_color_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\joystick.vcxproj">
+      <Project>{BFCB06C7-DC94-370C-84A7-1CBE570C6307}</Project>
+      <Name>joystick</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\joystick_static.vcxproj">
+      <Project>{C64C0D6D-D72E-3A62-A3A7-FBA63A8E9B0B}</Project>
+      <Name>joystick_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\keyboard.vcxproj">
+      <Project>{CFE140EC-8C97-3DEE-9F9E-6BEAF7EF60EF}</Project>
+      <Name>keyboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\keyboard_static.vcxproj">
+      <Project>{68E63ABB-DD61-3690-B986-F61B1A0C7068}</Project>
+      <Name>keyboard_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\multi-touch.vcxproj">
+      <Project>{A9E15371-753E-309A-B2ED-623E3C29DAD7}</Project>
+      <Name>multi-touch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\multi-touch_static.vcxproj">
+      <Project>{7D6BD1F5-B9A9-38DE-A26C-0E577369011E}</Project>
+      <Name>multi-touch_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\resizer.vcxproj">
+      <Project>{43A5778A-63A3-3D27-A77A-804ED5C340E9}</Project>
+      <Name>resizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\resizer_static.vcxproj">
+      <Project>{7509ACC6-F774-30DF-8FCE-C09BD085199D}</Project>
+      <Name>resizer_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\shapes.vcxproj">
+      <Project>{5789C5EE-3E4E-3F7B-9B99-AF9DDA96EE7D}</Project>
+      <Name>shapes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\shapes_static.vcxproj">
+      <Project>{C472338A-B707-3DF4-8D8A-2C79BA7A6E0E}</Project>
+      <Name>shapes_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\smooth_opengl3.vcxproj">
+      <Project>{06C1E6D3-DA4F-3CC8-9692-006D8DF88F8B}</Project>
+      <Name>smooth_opengl3</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\smooth_opengl3_static.vcxproj">
+      <Project>{9158F73C-6557-3B5D-8AB7-DC36F2B1485E}</Project>
+      <Name>smooth_opengl3_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\spaceball.vcxproj">
+      <Project>{5E49718A-7456-3CA1-8CA6-7C99F5524A6A}</Project>
+      <Name>spaceball</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\spaceball_static.vcxproj">
+      <Project>{D07117C7-6A1A-33ED-9369-B645F7760F92}</Project>
+      <Name>spaceball_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\subwin.vcxproj">
+      <Project>{E9221E8C-B62F-3DEA-A282-0A1537E971C6}</Project>
+      <Name>subwin</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\subwin_static.vcxproj">
+      <Project>{2C59541E-E6AF-3182-9D3A-A37BA2D93C8C}</Project>
+      <Name>subwin_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\timer.vcxproj">
+      <Project>{94B0505E-75C5-3FA4-9D1B-5036FA43873A}</Project>
+      <Name>timer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\timer_callback.vcxproj">
+      <Project>{C3050042-AC58-30EF-A08A-54063B514368}</Project>
+      <Name>timer_callback</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\timer_callback_static.vcxproj">
+      <Project>{E59A2BBF-AD0C-373B-B6D4-5232B26EBFDB}</Project>
+      <Name>timer_callback_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\librarise\freeglut-3.4.0\buld\timer_static.vcxproj">
+      <Project>{01540D3C-D6FE-3E9C-A398-B23E9675FEFE}</Project>
+      <Name>timer_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

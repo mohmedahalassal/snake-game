@@ -1,0 +1,3 @@
+﻿  1>Building Custom Rule C:/librarise/freeglut-3.4.0/CMakeLists.txt
+  lorenz.c
+  Lorenz.vcxproj -> C:\librarise\freeglut-3.4.0\buld\bin\Release\Lorenz.exe

@@ -1,0 +1,5 @@
+﻿  1>Building Custom Rule C:/librarise/freeglut-3.4.0/CMakeLists.txt
+  shapes.c
+  glmatrix.c
+  Generating Code...
+  shapes_static.vcxproj -> C:\librarise\freeglut-3.4.0\buld\bin\Release\shapes_static.exe

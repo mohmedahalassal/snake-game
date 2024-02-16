@@ -1,0 +1,5 @@
+﻿  1>Building Custom Rule C:/librarise/freeglut-3.4.0/CMakeLists.txt
+  spaceball.c
+  vmath.c
+  Generating Code...
+  spaceball_static.vcxproj -> C:\librarise\freeglut-3.4.0\buld\bin\Release\spaceball_static.exe
